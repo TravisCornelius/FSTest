@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/Applications/MAMP/htdocs/firespring/.metadata/.plugins/org.eclipse.jdt.core
+2143672910.index
+4278893236.index
+2604204678.index
