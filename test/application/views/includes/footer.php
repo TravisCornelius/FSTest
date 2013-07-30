@@ -1,12 +1,12 @@
+
+
 <footer>
-© 2013 Atlanta Falcons Football Club
+<p>© 2013 Atlanta Falcons Football Club</p>
 </footer>
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-
-
-
+<!-- close of div wrapper -->
+</div>
+</div>
 </body>
+
 
 </html>

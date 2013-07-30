@@ -1,127 +1,358 @@
-body {
-	background: #b6b6b6;
-	margin: 0;
-	padding: 0;
-	font-family: arial;
+@media (min-width: 1200px) {
+	.image h2{
+		top: 150px;
+		font-size: 6em;
+	}
+	
+	.art-title{
+		font-size: 2.2em;
+	}
+	
+	.date{
+		font-size: 1.1em;
+	}
+	.label{
+		width: 20px;
+		font-size: 22px;
+	}
+	
+	.content4{
+		display:block;
+		float:left;
+		width: 40%;
+	}
+	
+	.content5{
+		display:block;
+		float:left;
+		width: 50%;
+
+	}
+	
+	.content6{
+		display:block;
+		float:left;
+		width: 60%;
+		font-size:1.2em;
+	}
+	
+	
+	#content{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
 }
-#login_form {
-	width: 300px;
-	background: #f0f0f0 url(../img/login_bg.jpg) repeat-x 0 0;
-	border: 1px solid white;
-	margin: 250px auto 0;
-	padding: 1em;
-	-moz-border-radius: 3px;
+
+@media (max-width: 1199px) {
+	.image h2{
+		top: 140px;
+		font-size: 5em;
+	}
+	.art-title{
+		font-size: 1.83em;
+	}
+	
+	.label{
+		width: 20px;
+		font-size: 22px;
+	}
+	.content4{
+		display:block;
+		float:left;
+		width: 40%;
+	}
+	
+	.content5{
+		display:block;
+		float:left;
+		width: 50%;
+	}
+	
+	.content6{
+		display:block;
+		float:left;
+		width: 60%;
+		font-size:1.2em;
+	}
+	
+	#content{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
 }
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.image h2{
+		top: 120px;
+		font-size: 4em;
+	}
+	.art-title{
+		font-size: 1.46em;
+	}
+	
+	.label{
+		width: 20px;
+		font-size: 22px;
+	}
+	
+	.content4{
+		display:block;
+		float:left;
+		width: 40%;
+	}
+	
+	.content5{
+		display:block;
+		float:left;
+		width: 50%;
+	}
+	
+	.content6{
+		display:block;
+		float:left;
+		width: 60%;
+		font-size:1.2em;
+	}
+	
+	#content{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+@media (max-width: 767px) {
+	.image h2{
+		top: 70px;
+		font-size: 3em;
+	}
+	.art-title{
+		font-size: 1.1em;
+	}
+	
+	.label{
+		width: 20px;
+		font-size: 22px;
+	}
+	
+	.content4{
+		display:block;
+		float:left;
+		width: 40%;
+	}
+	
+	.content5{
+		display:block;
+		float:left;
+		width: 50%;
+	}
+	
+	.content6{
+		display:block;
+		float:left;
+		width: 60%;
+		font-size:1.2em;
+	}
+	
+	
+	
+	#content{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 480px) {
+	.image h2{
+		top: 55px;
+		font-size: 1.5em;
+	}
+	.art-title{
+		font-size: 1.3em;
+	}
+	
+	.label{
+		width: 20px;
+		font-size: 22px;
+	}
+	
+	.content4{
+		display:block;
+		float:left;
+		width: 40%;
+	}
+	
+	.content5{
+		display:block;
+		float:left;
+		width: 100%;
+	}
+	
+	.content6{
+		display:block;
+		float:left;
+		width: 100%;
+		font-size:1.2em;
+	}
+
+	
+	#content{
+		margin-left: 4%;
+		margin-right: 4%;
+		font-size: 2.1em;
+	}
+}
+
+.headline {
+   font-size: 15px;
+    font-weight: bold;
+    font-family: Source Sans Pro;
+	color: #231f20;
+}
+
+
+
+/*standards*/
 h1,h2,h3,h4,h5 {
-	margin-top: 0;
+	
 	font-family: arial black, arial;
 	text-align: center;
 }
 
-input[type=text], input[type=password] {
-	display: block;
-	margin: 0 0 1em 0;
-	width: 280px;
-	border: 5px;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-	padding: 1em;
+
+
+/*header image css */
+.image{
+	float: left;
+	width: 100%;
+	font-size:62.5%;
 }
 
+.image img{
+	width:100%;
+	margin-bottom:15px;
+}
+
+.image h2{
+	position: absolute;
+	text-shadow: 1px 1px 1px black;
+	color: white;
+	width: 100%;
+	font-weight: bold;
+    font-family: Source Sans Pro;
+}
+
+.art-title{
+    color: #231f20;
+    font-family: Noticia Text;
+	font-weight: bold;
+	text-align: center;
+}
+
+.date {
+    margin: 2% 40% 2% 40%; 
+    color: #c3c3c3;
+    font-family: Noticia Text;
+    padding-left: 1%;
+    padding-bottom: 25px;
+    border-bottom: medium solid #1B2431;
+	text-align: center;
+}
+
+.label {
+    
+    float: left;
+    font-weight: bold;
+}
+
+
+#headline-wrapper{
+	
+	margin:1em;
+}
+
+/*footer css */
 footer {
+	display:inline-block;
+	left:0;
+	width:100%;
 	background: #222222;
 	border: 1px solid white;
-	margin: 250px auto 0;
-	padding: 1em;
+	padding: 2em;
 }
 
-input[type=submit], form a {
-	border: none;
-	margin-right: 1em;
-	padding: 6px;
-	text-decoration: none;
-	font-size: 12px;
-	-moz-border-radius: 4px;
-	background: #348075;
+footer p{
+	text-shadow: 1px 1px 1px black;
+	left:0;
 	color: white;
-	box-shadow: 0 1px 0 white;
-	-moz-box-shadow: 0 1px 0 white;
-	-webkit-box-shadow: 0 1px 0 white;
-
-}
-
-input[type=submit]:hover, form a:hover {
-	background: #287368;
-	cursor: pointer;
-}
-
-
-
-
-/* Validation error messages */
-
-.error {
-	color: #393939;
-	font-size: 15px;
-}
-
-fieldset {
-	width: 300px;
-	margin: auto;
-	margin-bottom: 2em;
-	display: block;
-}
-
-/* FOR FUN */
-
-h1 {
-	text-shadow: 0 1px 0 white;
-}
-
-/* Not necessary. Just the "tutorial created by" stuff at the bottom */
-
-#tutInfo {
-	background: #e3e3e3;
-	border-top: 1px solid white;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
-	padding: .7em .7em .7em 2em;
+}
+
+/*youtube video*/
+.video a {
+    font-size: 8px;
+    font-family: Noticia Text;
+}
+.video {
+  
+    background-color: #cccccc;
+}
+
+.table{
+	background-color: #dcdcdc;
+	background:url("../img/back0.png") no-repeat;
+    background-size: 100px 147px;
+}
+
+.back1 {
+    width: 100px;
+    height: 48px;
+    background:url("../img/back1.png") no-repeat;
+    background-size: 100px 48px;
+}
+.back2 {
+    width: 100px;
+    height: 37px;
+    background:url("../img/back2.png") no-repeat;
+    background-size: 100px 37px;
+}
+.back3 {
+    width: 100px;
+    height: 48px;
+    background:url("../img/back3.png") no-repeat;
+    background-size: 100px 48px;
+}
+.back4 {
+    width: 100px;
+    height: 47px;
+    background:url("../img/back4.png") no-repeat;
+    background-size: 100px 47px;
+}
+.back1 p, .back2 p, .back3 p, .back4 p {
+    margin: 0;
+    font-size: 9px;
+    font-family: Noticia Text;
+    padding-top: 2px;
+    padding-left: 5px;
+    color: white;
+}
+.back1 img, .back2 img, .back3 img, .back4 img {
+    width: 12%;
+}
+.back1 a, .back2 a, .back3 a, .back4 a {
+    margin: 0;
+    font-size: 9px;
+    font-family: Noticia Text;
+    padding-top: 2px;
+    padding-left: 5px;
+	padding: 5px;
+    color: white;
+	text-decoration: none;
 }
 
 
-
-
-/* Sample css for testing. */
-.form_style #contentText {
-	border: 1px solid #CCCCCC;
-	border-radius: 5px;
-}
-.form_style #FormSubmit {
-	display: block;
-	background: #003366;
-	border: 1px solid #000066;
-	color: #FFFFFF;
-	margin-top: 5px;
-}
-#responds{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-#responds li{
-	list-style: none;
-	padding: 10px;
-	background: rgb(182, 232, 255);
-	margin-bottom: 5px;
-	border-radius: 5px;
-	max-width: 400px;
-	font-family: arial;
-	font-size: 13px;
-}
-.del_wrapper{float:right;}
-.content_wrapper {
-	max-width: 400px;
-	margin-right: auto;
-	margin-left: auto;
+#content{
+	font-size:62.5%;
+	font-family: Noticia Text;
+	color: #231f20;
 }

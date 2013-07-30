@@ -87,7 +87,51 @@ class Example extends CI_Controller
 			'max-results'=>4);
 		
 		$playlist = 'PL07B32D2A9CDF22DE';
-		echo $this->youtube->getPlaylistFeed($playlist, $ytParams);
+	
+		$xmlstring = $this->youtube->getPlaylistFeed($playlist, $ytParams);
+		$xml = simplexml_load_string($xmlstring);
+		
+		
+		
+		$d = "<div class=\"video\" style=\"float: right;\">";
+		$d .=  "<table>
+                <tr>
+                    <td style=\"padding-top: 10px; padding-left: 5px;\">
+                        <img src=\" ";
+
+		$d .= base_url('img/tv1.png'); 
+		
+		$d .= " \" alt=\"\">
+                    </td>
+                    <td>
+                        <a>RELATED VIDEOS</a>
+                    </td>
+                </tr>
+            </table>";
+			
+		$i = 1;	
+		foreach($xml->entry as $entry){
+			foreach($entry->link as $link){
+				if($link['rel']=="alternate"){
+					$d .= "<div class = \"back" . $i ."\">";
+					$d .= "<p><a href=\"". $link['href'] . "\">" . $entry->title . "</a>" . "<br></p>";
+					$d .= "</div>";
+					$i++;
+				}
+			}
+		}
+		$d .= "</div>";
+		
+		$data['main_content' ] = 'home';
+		$data['youtubeVideos'] = $d;
+		$this->load->view('includes/template', $data);
+		
+		
+	//	print_r($xml);
+	//	$json = json_encode($xml);
+	//	$array = json_decode($json,TRUE);
+	//	echo count($array);
+		
 	}
 	
 	
